@@ -1,1 +1,1 @@
-# Úvod do Microsoft Azure
+# Kuchařka služeb Microsoft Azure

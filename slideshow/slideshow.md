@@ -34,234 +34,293 @@ style: |
   /* Styling page number */
   section::after {
     color: grey;
-    font-weight: bold;
-    font-size: 1.5 rem;
+    font-weight: normal;
+    font-size: 1.2rem;
   }
-header: 'Úvod do Microsoft Azure'
-footer: '[petrkucerak/Introduce-to-Azure-Workshop](https://github.com/petrkucerak/Introduce-to-Azure-Workshop)'
+header: 'Kuchařka služeb Microsoft Azure'
+footer: '[petrkucerak/Azure-Services-cookbook](https://github.com/petrkucerak/Azure-Services-cookbook)'
 paginate: true
 backgroundColor: "#000"
 size: 16:9
-
 ---
 
-<!--
-header: ''
-footer: ''
-paginate: false
--->
-
-# Úvod do Microsoft Azure
-
-![bg 20% opacity:.1](../assets/azure.png)
-
-<!-- Image source: https://swimburger.net/media/ppnn3pcl/azure.png -->
+# 🎥 Spusť nahrávání!
 
 ---
 
 ![bg 20%](../assets/azure.png)
+<!-- ../assets/Image source: https://swimburger.net/media/ppnn3pcl/azure.png -->
 
 ---
 
 <!--
-header: 'Úvod do Microsoft Azure'
-footer: '[petrkucerak/Introduce-to-Azure-Workshop](https://github.com/petrkucerak/Introduce-to-Azure-Workshop)'
+header: 'Kuchařka služeb Microsoft Azure'
+footer: '[petrkucerak/Azure-Services-cookbook](https://github.com/petrkucerak/Azure-Services-cookbook)'
 paginate: true
 -->
 
-# Idea
+# Plán
 
-- learning
-- aktivitka
-
----
-
-![bg cover opacity:.15](../assets/dark_computers.png)
-
-# Cloud computing
-
-> Model poskytování IT služeb a infrastruktury na vzdálených serverových zdrojích, které mohou být využívány pomocí internetu.
-
-
-<!--
-
-# Odpoved od chat GPT
-
-Cloud Computing je model poskytování IT služeb a infrastruktury na vzdálených serverových zdrojích, které mohou být využívány pomocí internetu. Tyto služby zahrnují úložiště dat, aplikace, infrastrukturu a služby založené na časovém pronájmu, a mohou být nabízeny jako publikové, soukromé nebo hybridní cloud. Cílem tohoto modelu je umožnit uživatelům přistupovat k IT zdrojům bez nutnosti investovat do vlastní infrastruktury. 
-
-# Cloud computing
-
-- poskytování virtual machines, storage, databases, and networking
-- krom tradicnich napr. ale i sber sluzby pro IoT, Machine Learning ci AI
-
-
--->
----
-
-
-# Cloud x On-premise
-
-![bg opacity:.50](../assets/dark_clouds.png)
-![bg opacity:.75](../assets/dark_computers.png)
-
-<!-- 
-- neni zcela presne (pod cloudem se skryva vice modelu)
-- ale obecne se jedna o extremmy, pojdme si je spolecne pojmenovat
- -->
-
-
----
-<!-- 
-header: ''
-footer: ''
-paginate: false
-backgroundColor: #fff
- -->
-
-![bg fit](../assets/shared-responsibility-b3829bfe.svg)
-
-<!-- 
-
-# Scenare poskytovani Cloud sluzeb
-
-- pojdme zacit od konce s vysvetlenim jednotlivych bodu (zodpovednosti)
-
-- zkuste vymyslet ke kazdemu pointu jeden priklad MSFT sluzby
-
-SaaS (Software as a Service)
-- Office
-- GitHub
-
-PaaS (Platform as a Service)
-- Power Apps
-- Azure Web App
-
-IaaS (Infrastrucutre as a Service)
-- Azure, napr. VM
-
-On-prem
-
- -->
+- rychlé nakouknutí na služby z dané oblasti
+- otázka po téměř každé sekci
+  - tužka + papír / něco na poznámky
 
 ---
 
-<!-- 
-header: 'Úvod do Microsoft Azure'
-footer: '[petrkucerak/Introduce-to-Azure-Workshop](https://github.com/petrkucerak/Introduce-to-Azure-Workshop)'
-paginate: true
-backgroundColor: #000
+# Azure Pricing Calculator
 
--->
-
-![bg cover opacity:.10](../assets/dark_clouds.png)
-
-# Modely cloudu
-
-- Private cloud
-- Public cloud
-- Hybrid cloud
-- Multi-cloud
-
-
-
-<!-- 
-- Verejny cloud - je poskytovany treti stranou, je dostupny pro vsechny v internetu
-- Soukromy - je poskytovany vami, je privatni siti... Muze byt provozovan ve vasem datacentru, ci datacentru treti strany... Stoji vice penez, jste zodpovedni za veskerou udrzbu, bezpecnost atd.
-- Hybrid cloud umožňuje kombinaci a největší flexibilitu
-- Multi-cloud: Vice provideru cloudu (napr. goverment)
-
-K sprave muze pomoci prave Azure Arc, nastroj od Azure
-
- -->
----
-
-![bg cover opacity:.10](../assets/dark_clouds.png)
-
-# Výhody cloudu
-
-brainstorming
+- rychlý přehled služeb
+- rychlá cenová kalkulace
+- [Pricing Calculator](https://azure.microsoft.com/en-gb/pricing/calculator/)
 
 ---
 
-![bg cover opacity:.10](../assets/dark_clouds.png)
+<!-- backgroundColor: #F9FAFE -->
 
-# Výhody cloudu
-
-- škálovatelnost (horizontální x vertikální)
-- pay as you go
-- modely (PaaS, IaaS, ...) -> starám se o důležité věci
-- bezpečnost
-- ...
-
-<!-- 
-- nevýhody cloudu
-  - myslím, že je dobré také se zamyslet nad touto otázkou
-  - z mé zkušensoti to je pouze cena, v určité situaci
- -->
----
-
-<!--
-header: 'Úvod do Microsoft Azure | aktivitka'
-footer: '[petrkucerak/Introduce-to-Azure-Workshop](https://github.com/petrkucerak/Introduce-to-Azure-Workshop)'
-paginate: true
--->
-
-![bg cover opacity:.15](../assets/activity.png)
-
-# Aktivitka - scénáře
-
-- tužka
-- papír
-
-<!-- 
-# Jedná se o cloud computing a o jaký model SaaS, IaaS, PaaS
-
-Vezměte si tužku a papír. Projedeme si několik scénářů a zajímá udělejte si poznámku u toho bodu, o kterém si myslíte, že se jedná o cloud computing a u jaké části a jaký model je aplikován?
-
--->
+![bg fit](../assets/image.png)
 
 ---
 
-![bg right:65% cover](../assets/DIY_sensor.png)
+<!-- backgroundColor: #000 -->
 
-Scénář 1
-**DIY senzor**
+# Obchodní dům
 
-<!-- 
-
-# Case 1 - DIY sensor
-
-Jste domácí bastlíř. Stavíte si chytrou domácnost. Máte po domu nataháno několik senzorů. Ty sbírají a odesálají je pomocí Wifi do agregátoru, kterým je ve vašem případě server, který běží u vás doma na Raspberry PI. Server máte připojený do domácí lokální sítě a běží vám na něm několik služeb. Jednou z nich je i model AI, který vám pomáhá predikovat spotřebu energie v závislosti na historickém vývoji a současným ekonomickým a hospodářským trendům.
-
--->
+Přišel za vámi obchodní dům, že chce abyste do jejich aplikace přidali featuru, která bude umožňovat jejich zákazníkům naskenovat účtenku a rozdělit jednoltivé položky mezi více lidí. Jakou službu využijete?
 
 ---
 
-![bg right:65% cover](../assets/receiept.png)
+<!-- backgroundColor: #F9FAFE -->
 
-Scénář 2
-**Skener účtenek**
-
-<!-- 
-
-# Case 2 - skener účtenek
-
-Studujete na vysoké škole. Pravidelně chodíte nakupovat do několika obchodních domů. Odnášite si papírové účtenky. Společně se spolubydlícími ze studentského bytu používáte aplikaci, která vám rozdělí výdaje. Nebaví vás ale neustále přepisovat, obash účtenky. Umíte programovat, tak si vyvynete vlastní webovou aplikaci, která funguje tak, že naskenuje obrázek, odešle ho do služby od Azure na rekonigici textu z účetnky. Služba vrátí strojový text popisující obash. Webová apliakce ho následně překonvertuje do formátu čitelného pro aplikci na záznam dluhů a apliakci spustí rovnou s předvyplněnými daty.
-
--->
+![bg fit](../assets/image-1.png)
 
 ---
 
-![bg right:65% cover](../assets/CRM.png)
+<!-- backgroundColor: #000 -->
 
-Scénář 3
-**CRM system**
+# Otužilcův deník
 
-<!-- 
+Jste vášnivým otužilcem. Chcete si vést pravidelné záznamy o tom, jaká je teplota vody v řece, kam se chodíte každý den otužovat. Bohužel ale ČHMU nemá v daném místě ždnou sondu. Vyrobíte si tedy zařízení, které pomocí LoRa odesílá data na váš server. Vy je chcete ale nějako analyzovat. Jaký produkt byste pro to využili?
 
-# Case 3 - CRM system
+---
 
-Jste CTO firmy, ktera se chce transformovat do noveho CRM systemu. Stojíte před volbou jakou nabídku využít. Jedna firma vám nabízí komplexní produkt, který obashuje i hostování u nich. Druhá vám chte prodat licenci k produkut, který si musíte nasintalovat a provozovat samy. Třetí umožňuje obě možnosti.
-Který proukt byste zvolili v jaké situaci? Jedná se o veliké zobecnění, ale zjednodušte.
+<!-- backgroundColor: #F9FAFE -->
 
--->
+![bg fit](../assets/image-2.png)
+
+---
+
+<!-- backgroundColor: #000 -->
+
+# Vánoční videopřání
+
+Tvoříte platformu, která umožňuje vašim zákazníkům natáčet videa s využitím rozšířené reality. Funguje tím způsobem, že vás ve videu oblékne do produktu, který zakoupíte a vyexportuje video, které můžete odeslat. Jakou služby byste využili pro hostování takové aplikace?
+
+---
+
+<!-- backgroundColor: #F9FAFE -->
+
+![bg fit](../assets/image-3.png)
+
+---
+
+<!-- backgroundColor: #000 -->
+
+# Kdykoliv a kdekoliv
+
+Vytváříte wordpress pluginy. Pro vývoj si ale musíte neusátále spuštět lokální server. To je ale strašlivá otrava a to především, když chce s vývojem začít někdo noví a to jak na lokálním severu nebo třeba na nějakém jiném. Jakou službu byste využili? Ideálně aby stačilo naklonovat repostář a spustit commnad, který vše několika způsoby rozjede?
+
+---
+
+<!-- backgroundColor: #F9FAFE -->
+
+![bg fit](../assets/image-4.png)
+
+---
+
+<!-- backgroundColor: #000 -->
+
+# Velký počet - není problém
+
+Provozujete službu, která zažívá obrosvký rozmach. Vaše datové analýzy ukazují, že do několika dnů využití vašeho produkutu zažije enormní nárust až od 700%. Na pozadí používáte databázi. Bojíte se, že ale nezvládne obsloužit veliké množství zařízení a jejich dotazů. Jakou službu byste doporučili využít?
+
+---
+
+<!-- backgroundColor: #F9FAFE -->
+
+![bg fit](../assets/image-5.png)
+
+---
+
+<!-- backgroundColor: #000 -->
+
+# Nová infrastruktura za pár minut?
+
+Staráte se o infrastrukturu bance. Chce expandovat do nového regionu. Ten má ale specifika, že musejí všechna data být pouze na serverech v jejich oblati. Musíte tedy vytvořit celou infrastrukutur automatizovaně a co nejdříve. Jaké služby z oblasti DevOps byste využili?
+
+---
+
+<!-- backgroundColor: #F9FAFE -->
+
+![bg fit](../assets/image-6.png)
+
+---
+
+<!-- backgroundColor: #000 -->
+
+# Data pro otužilce podruhé
+
+Chodité se pravidelně otužovat. Ve místě kam chodíte má ČHMU stanici. Ta ovšem zobrazuje data pouze za poslední den. Vy si chcete ale ukládat celou historii. Jaký produkt z nabízených nástrojů využijete?
+
+---
+
+<!-- backgroundColor: #F9FAFE -->
+
+![bg fit](../assets/image-13.png)
+
+---
+
+<!-- backgroundColor: #F9FAFE -->
+
+![bg fit](../assets/image-14.png)
+
+---
+
+<!-- backgroundColor: #F9FAFE -->
+
+![bg fit](../assets/image-7.png)
+
+---
+
+<!-- backgroundColor: #000 -->
+
+# Bezpečnost na Univerzitě
+
+Spravujte velkou inverzitní síť. Využíváte jak vlastních výpočetních zdrojů, tak externách cloudových služeb jako Azure, AWS, ... Vyšlo ale nové nařízení od EU a musíte zabezpečit celý váš hybdriní systém. Jaké služby využijtete?
+
+---
+
+<!-- backgroundColor: #F9FAFE -->
+
+![bg fit](../assets/image-8.png)
+
+---
+
+<!-- backgroundColor: #F9FAFE -->
+
+![bg fit](../assets/image-9.png)
+
+---
+
+<!-- backgroundColor: #000 -->
+
+# Otužilci potřetí
+
+Provozujte obrovskou síť IoT zařízení pro otužilce, které na různých úsecích měří kvalitu vody a teplotu vody. Vlhkost vzduchu a teplotu vzduchu. Data jsou na sondě zpracovávány a odesílány pomocí prokolu MQQT do cloudu. Chybí vám ale určítý aplikační interface, který by zajitil komunikační vrstvu mezi sondou a serverem vytočeným v cloudu. Jakou služby využijete?
+
+---
+
+<!-- backgroundColor: #F9FAFE -->
+
+![bg fit](../assets/image-10.png)
+
+---
+
+<!-- backgroundColor: #000 -->
+
+# Průmysl načas
+
+Jste ředitelem optimalalizace výroby v veliké firmě speciialujzící se na součástky ve sféře automotive. Potřebujte navrhnout linku, která bude splňovat bezpečnostní podmínky a uspokojí vaše potřeby, tedy zrychlení procu výroby. K tomu budete využívat čimu ST32. Jakého řešení využijte k tomu, aby mohla v rálném čase komunikovat mezi sebou i s nadřazenou infrastrukuturou? 
+
+---
+
+<!-- backgroundColor: #F9FAFE -->
+
+![bg fit](../assets/image-11.png)
+
+---
+
+<!-- backgroundColor: #F9FAFE -->
+
+![bg fit](../assets/image-12.png)
+
+---
+
+<!-- backgroundColor: #F9FAFE -->
+
+![bg fit](../assets/image-15.png)
+
+---
+
+<!-- backgroundColor: #000 -->
+
+# Nezapomeň
+
+Vyrábíte online brožuru cílenou na mobilní telfony, která bude fungovat jako PWA s četením na každý den. Chcete umžnit uživatelům, aby nezapomněli na to si každý den čtení přečíst. Jakou službu využijte?
+
+---
+
+<!-- backgroundColor: #F9FAFE -->
+
+![bg fit](../assets/image-16.png)
+
+---
+
+<!-- backgroundColor: #000 -->
+
+# Jak voda v přehradě
+
+Vaše služba se rozrostal a musíte zvětšit vaši infrastrukut. Proto jste z jedné instance serveru škálovali na více. S tím ale nastává problém toho, že musíte být schopni požadvky od klinetů rozdělit mezi více instancí tak, abyste je zvládli rovnoměrné odbavovat. Jakou službu zvolíte?
+
+---
+
+<!-- backgroundColor: #F9FAFE -->
+
+![bg fit](../assets/image-17.png)
+
+---
+
+<!-- backgroundColor: #000 -->
+
+# Automatizace forever
+
+Ve svém automatizovaném procesu pro nasazování aplikací, potřebujte přistupovat k zabezpečeným klíčům. Jakou službu byste pro tento problém zvolili?
+
+---
+
+<!-- backgroundColor: #F9FAFE -->
+
+![bg fit](../assets/image-18.png)
+
+---
+
+<!-- backgroundColor: #000 -->
+
+# Kde jen mám teplate
+
+Vytváříte automatický skript, který má běžet na infrastuktuře u vaši zákazníků. Jeho běh ale vyžaduje stažení *teplate* souboru. Na něho ale máte požadavek takový, že ho chcete být shcopni měnit v čase a všem zákazníkům poskytovat nejnovější verzi aniž byste museli zasahovat do skriptu, který mají u sebe. Zároveň chcete být schpni monitorovat využítí *template* jednotlivými zákazníky. Jaké služby využijete k uložení souboru.
+
+---
+
+<!-- backgroundColor: #F9FAFE -->
+
+![bg fit](../assets/image-19.png)
+
+---
+
+<!-- backgroundColor: #000 -->
+
+# Zase je to pomalé
+
+Provozujte webovou aplikaci, kteá je využívaná po celém světe. Vaše servery ovšem po celém světe distribuované nejsou. Vaše aplikace navíc obashuje spoutu statických dat. Jakou službu byste využili pro zrychlení načítání aplikace?
+
+---
+
+<!-- backgroundColor: #F9FAFE -->
+
+![bg fit](../assets/image-20.png)
+
+---
+
+<!-- backgroundColor: #000 -->
+
+![bg 30%](../assets/image-21.png)
